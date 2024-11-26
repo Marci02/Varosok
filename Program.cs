@@ -27,7 +27,7 @@ Console.WriteLine($"A legnépesebb város: {varosok.OrderByDescending(x => x.Nep
 var nagyvarosok = varosok.Where(x => x.Nepesseg > 20000000).OrderByDescending(x => x.Nepesseg);
 foreach (var n in nagyvarosok)
 {
-    Console.WriteLine($"{n.Varos} ({n.Orszag}): {n.Nepesseg:F0} fő");
+    Console.WriteLine(n);
 }
 
 //5. feladat
